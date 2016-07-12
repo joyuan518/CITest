@@ -1,14 +1,16 @@
 ﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
+using CITest.Function;
 
 namespace CITest.Tests
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest1
     {
-        [TestMethod]
+        [Test]
         public void TestMethod1()
         {
+            Assert.AreEqual(new Test().Add(1, 2), 3);
         }
     }
 }

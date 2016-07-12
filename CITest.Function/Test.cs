@@ -8,6 +8,9 @@ namespace CITest.Function
 {
     public class Test
     {
-        fsdfdsf
+        public int Add(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
